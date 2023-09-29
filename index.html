@@ -1,0 +1,72 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form >
+   <!--Challenge1-->
+    <div>
+      <label for="username"> Username </label>
+      <input type="text" name="username" id="username">
+    </div>
+    <!--Challenge2-->
+    <div>
+      <label for="date"> Birthday </label>
+      <input type="date" name="date" id="date" required>
+    </div>
+    <div>
+      <label for="email"> Email </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="passord" id="password" required>
+
+    <!--Challenge3-->
+    <div>
+      <label> Food </lable>
+      <select name="food">
+        <option value="kesari"> Kesari </option>
+        <option value="dosa">Dosa</option>
+        <option value="vada"> Vada </option>
+        <option value="idli"> Idli </option>
+      </select>
+      </div>
+      <div>
+     <input type="radio" name="color" value="violet">Violet<br>
+     <input type="radio" name="color" value="black">Black<br>
+     <input type="radio" name="color" value="blue">Blue<br>
+      <!--Challenge4-->
+      <div>
+        <form action="process_form.php" method="post">
+        <label for="firstname"> Firstname:</label>
+        <input name="firstname" id="firstname" type="text" required>
+        <br>
+        <label for="lastname"> Lastname:</label>
+        <input name="lastname" id="lastname" type="text" required>
+        <br>
+        <label for="email"> Email:</label>
+        <input name="email" id="email" type="email" required>
+        <br>
+        <label for="message"> Message:</label>
+        <textarea name="message" id="message" type="text" maxlength="150"> </textarea>
+        <br>
+        <button>Submit</button>
+        <br>
+      </div>
+  </form>
+</body>
+</html>
